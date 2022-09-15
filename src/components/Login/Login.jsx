@@ -1,9 +1,11 @@
 import React from 'react'
-import "./index.css"
+import LoginForm from './LoginForm'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <>
+    <LoginForm/>
+    </>
   )
 }
 
