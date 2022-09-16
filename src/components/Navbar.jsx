@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({isShown = true}) => {
   return (
-    <div>
+    <div style={{
+      display: `${isShown ? 'flex': 'none'}`
+    }}>
 
         <Link to={'/'}>
         <a >Home</a>

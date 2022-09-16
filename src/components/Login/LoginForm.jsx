@@ -1,8 +1,11 @@
 import React from 'react'
-
+import "./LoginForm.css"
+import Navbar from '../Navbar'
 
 const LoginForm = () => {
   return (
+    <>
+    <Navbar isShown={false} />
     <form>
         <div className='form-inner'>
             <h2>Login</h2>
@@ -22,6 +25,7 @@ const LoginForm = () => {
             <button>LOGIN</button>
         </div>
     </form>
+    </>
   )
 }
 
