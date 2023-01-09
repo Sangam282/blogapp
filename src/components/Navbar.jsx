@@ -18,6 +18,9 @@ const Navbar = ({isShown = true}) => {
         <Link to={'/login'}>
         <a>Login</a>
         </Link>
+        <Link to={'/signUp'}>
+        <a>SignUp</a>
+        </Link>
     </div>
   )
 }

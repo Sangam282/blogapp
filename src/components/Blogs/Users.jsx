@@ -1,7 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 import {useEffect, useState} from 'react'
-
+import Navbar from '../Navbar';
 
 const Users = () => {
     const[users, setUsers] = useState([]);
@@ -21,10 +21,18 @@ const Users = () => {
     }, []);
     return (
     <>
+    {console.log(users)}
+    <Navbar isShown={true} />
     {users.length>0? (
+
         <div>
             {users.map((user)=>{
-                return<p key={user.id}>{user.name}</p>;
+                return <div key={user.id}>
+                    <p>{user.name}</p>
+                    <p>{user.phone}</p>
+                    <p>{user.username}</p>
+                    <p>{user.email}</p>
+                </div>
             })}
         </div>
     ) :(
