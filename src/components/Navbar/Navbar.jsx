@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+import "./Navbar.css"
 
 const Navbar = ({isShown = true}) => {
   return (
-    <div style={{
+    <nav style={{
       display: `${isShown ? 'flex': 'none'}`
     }}>
-
+      <ul>
         <Link to={'/'}>
         <a >Home</a>
         </Link>
@@ -21,7 +22,8 @@ const Navbar = ({isShown = true}) => {
         <Link to={'/signUp'}>
         <a>SignUp</a>
         </Link>
-    </div>
+      </ul>
+    </nav>
   )
 }
 

@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav Link {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav a.active {
+    background-color: lightgray;
+  }
+  
